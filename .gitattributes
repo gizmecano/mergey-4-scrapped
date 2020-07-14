@@ -3,4 +3,5 @@
 
 # Detect text files
 *.git*        text
+*.php         text
 .editorconfig text
