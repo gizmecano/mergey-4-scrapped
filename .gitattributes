@@ -1,0 +1,6 @@
+# Set the default behavior to CRLF line endings
+* text eol=crlf
+
+# Detect text files
+*.git*        text
+.editorconfig text
