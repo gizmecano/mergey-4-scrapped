@@ -9,7 +9,9 @@ require_once 'layout/required/page-data.php';
 <?php require_once 'layout/head.php'; ?>
 
 <body>
+  <div class="flex-container">
 
+  </div>
 </body>
 
 </html>
