@@ -14,7 +14,10 @@ require_once 'layout/required/page-data.php';
 <body id="<?php echo $page['body']; ?>">
   <div class="flex-container">
     <?php require_once 'layout/header.php'; ?>
-
+    <main id="main" class="w75 small-w100 tiny-w100 man pal">
+      <!-- Main content of the page -->
+      Main content of the page
+    </main>
   </div>
 </body>
 
