@@ -13,6 +13,7 @@ require_once 'layout/required/page-data.php';
 
 <body id="<?php echo $page['body']; ?>">
   <div class="flex-container">
+    <?php require_once 'layout/header.php'; ?>
 
   </div>
 </body>
