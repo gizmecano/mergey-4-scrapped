@@ -21,3 +21,33 @@
     z-index: 0;
     min-height: 100vh;
   }
+
+/* ==========================================================================
+   Specific identities
+   ========================================================================== */
+
+/* Full Page Background
+   Code adapted from: "Perfect Full Page Background Image"
+   https://css-tricks.com/perfect-full-page-background-image/#article-header-id-2
+   ========================================================================== */
+   #full-page-background {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+   }
+    
+  #full-page-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: -2;
+    filter: grayscale(.75) opacity(.75) contrast(2.5);
+  }

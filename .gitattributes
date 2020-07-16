@@ -8,3 +8,6 @@
 *.lock        text
 *.php         text
 .editorconfig text
+
+# Define Binary files
+*jpg          binary
