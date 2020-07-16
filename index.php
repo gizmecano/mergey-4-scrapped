@@ -20,6 +20,8 @@ require_once 'layout/required/page-data.php';
     </main>
     <?php require_once 'layout/footer.php'; ?>
   </div>
+  <?php require_once 'layout/reusable/body-background.php'; ?>
+
 </body>
 
 </html>
