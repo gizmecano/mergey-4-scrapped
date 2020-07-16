@@ -7,5 +7,6 @@
   <!-- Implement independent components -->
   <link rel="stylesheet" href="assets/knacss/knacss.css?version=7.1.3" media="all">
   <link rel="stylesheet" href="assets/inter/inter.css?version=3.13" media="all">
-
+  <!-- Design custom stylesheets -->
+  <link rel="stylesheet" href="design/bedrock.css" media="all">
 </head>
