@@ -2,6 +2,7 @@
 * text eol=crlf
 
 # Detect text files
+*.css         text
 *.git*        text
 *.php         text
 .editorconfig text
