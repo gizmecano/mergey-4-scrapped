@@ -2,24 +2,54 @@
    Custom properties
    ========================================================================== */
   :root {
+  /* Define color palette (using RGB values) */
+  --dark: 54, 69, 79; /* Charcoal */
+  --pale: 242, 240, 230; /* Alabaster */
   /* Define font stack */
   --sans: 'Inter var', sans-serif;
   }
-
+  
 /* ==========================================================================
    Sectionning elements
    ========================================================================== */
-
+  
 /* Body
    ========================================================================== */
   body {
     font-family: var(--sans);
     font-style: normal;
     font-weight: 400;
+    color: rgb(var(--dark));
   }
   body .flex-container {
     z-index: 0;
     min-height: 100vh;
+  }
+
+/* Header
+   ========================================================================== */
+  header#header {
+    background: rgba(var(--pale), .8125);
+  }
+
+/* Main
+   ========================================================================== */
+  main#main {
+    background: rgba(var(--pale), .9375);
+  }
+  @media (min-width : 768px) {
+    main.w75 {
+      border-left: solid .125rem rgba(var(--dark), .5);
+      border-top: none;
+    }
+  }
+
+/* Footer
+   ========================================================================== */
+  footer {
+    background: rgba(var(--dark), .875);
+    color: rgb(var(--pale));
+    border-top: solid .125rem rgb(var(--dark));
   }
 
 /* ==========================================================================
