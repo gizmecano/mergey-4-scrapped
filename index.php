@@ -18,6 +18,7 @@ require_once 'layout/required/page-data.php';
       <!-- Main content of the page -->
       Main content of the page
     </main>
+    <?php require_once 'layout/footer.php'; ?>
   </div>
 </body>
 
