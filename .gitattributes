@@ -4,5 +4,7 @@
 # Detect text files
 *.css         text
 *.git*        text
+*.json        text
+*.lock        text
 *.php         text
 .editorconfig text

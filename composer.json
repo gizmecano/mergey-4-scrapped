@@ -1,0 +1,17 @@
+{
+  "name": "gizmecano/mergey.ch",
+  "version": "4.0.0-beta.1",
+  "type": "project",
+  "homepage": "https://github.com/gizmecano/mergey.ch",
+  "authors": [
+    {
+      "name": "P. Mergey",
+      "homepage": "http://mergey.ch/",
+      "role": "Owner"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "7.3.*"
+  }
+}
