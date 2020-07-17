@@ -5,7 +5,7 @@
     </a>
   </div>
   <div class="w75 center txtcenter">
-    <h1>Main heading of the site</h1>
-    <p>Subtitle describing the site</p>
+    <h1><?php echo $site['name']; ?></h1>
+    <p><?php echo ucfirst($glossary['site']['motto']); ?></p>
   </div>
 </header>

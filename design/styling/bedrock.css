@@ -49,10 +49,16 @@
     padding-top: 2rem;
   }
 
-  header h1{
+  header h1,
+  header h1 + p {
     font-family: var(--font-srfi);
     font-style: italic;
     font-weight: 600;
+  }
+
+  header h1 + p {
+    font-size: 2rem;
+    opacity: .75;
   }
 
 /* Main
