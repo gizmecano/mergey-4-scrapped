@@ -6,7 +6,8 @@
   --dark: 54, 69, 79; /* Charcoal */
   --pale: 242, 240, 230; /* Alabaster */
   /* Define font stack */
-  --sans: 'Inter var', sans-serif;
+  --sans: 'Inter var', sans-serif; /* Sans-serif font */
+  --srfi: 'Lora-VF-i', serif; /* Italic serif font */
   }
   
 /* ==========================================================================
@@ -30,6 +31,12 @@
    ========================================================================== */
   header#header {
     background: rgba(var(--pale), .8125);
+  }
+
+  header#header h1{
+    font-family: var(--srfi);
+    font-style: italic;
+    font-weight: 600;
   }
 
 /* Main
