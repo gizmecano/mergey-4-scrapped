@@ -5,6 +5,8 @@
   /* Define color palette (using RGB values) */
   --tint-dark: 54, 69, 79; /* Charcoal */
   --tint-pale: 242, 240, 230; /* Alabaster */
+  --tint-core: 227, 66, 52; /* Vermilion */
+  --tint-fire: 224, 152, 66; /*Fire Blush */
   /* Define font stack */
   --font-sans: 'Inter var', sans-serif; /* Sans-serif font */
   --font-srfi: 'Lora-VF-i', serif; /* Italic serif font */
@@ -31,6 +33,20 @@
    ========================================================================== */
   header {
     background: rgba(var(--tint-pale), .75);
+  }
+
+  header a svg {
+    fill: rgb(var(--tint-core));
+    transition: fill 2s, transform 2s;
+  }
+
+  header a svg:hover {
+    fill: rgb(var(--tint-fire));
+    transform: rotate(360deg);
+  }
+
+  header div + div {
+    padding-top: 2rem;
   }
 
   header h1{

@@ -1,14 +1,11 @@
 <header id="header" class="w25 small-w100 tiny-w100 man pal">
-  <figure class="w40 center">
+  <div class="w50 center">
     <a href="/">
-      <!-- Main emblem using SVG format-->
-      Main Emblem
+      <?php echo file_get_contents('design/artwork/brands/mergey.svg'); ?>
     </a>
-  </figure>
-
-  <section class="w80 center txtcenter">
-    <!-- Main heading of the site -->
+  </div>
+  <div class="w75 center txtcenter">
     <h1>Main heading of the site</h1>
     <p>Subtitle describing the site</p>
-  </section>
+  </div>
 </header>
