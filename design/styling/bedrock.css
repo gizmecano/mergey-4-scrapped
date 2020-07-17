@@ -81,6 +81,14 @@
     border-top: solid .125rem rgb(var(--tint-dark));
   }
 
+  footer h3 {
+    font-size: 1.6rem;
+    letter-spacing: .04em;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid .125rem rgba(var(--tint-pale), .875);
+  }
+
 /* ==========================================================================
    Specific identities
    ========================================================================== */

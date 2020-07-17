@@ -1,4 +1,10 @@
 {
+  "foot": {
+    "part-1": "informations",
+    "part-2": "projets",
+    "part-3": "réseaux",
+    "part-4": "colophon"
+  },
   "site": {
     "motto": "conception internet, édition numérique, etc."
   }
