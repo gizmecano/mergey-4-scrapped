@@ -30,7 +30,7 @@
 /* Header
    ========================================================================== */
   header {
-    background: rgba(var(--tint-pale), .8125);
+    background: rgba(var(--tint-pale), .75);
   }
 
   header h1{
@@ -42,7 +42,7 @@
 /* Main
    ========================================================================== */
   main#main {
-    background: rgba(var(--tint-pale), .9375);
+    background: rgba(var(--tint-pale), .875);
   }
   @media (min-width : 768px) {
     main.w75 {
