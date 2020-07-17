@@ -15,8 +15,11 @@ require_once 'layout/required/page-data.php';
   <div class="flex-container">
     <?php require_once 'layout/header.php'; ?>
     <main id="main" class="w75 small-w100 tiny-w100 man pal">
-      <!-- Main content of the page -->
-      Main content of the page
+      <article class="w100 small-w100 tiny-w100 fr">
+        <!-- Main content of the page -->
+        <h2>Title of the article</h2>
+        <p>Paragraph of content.</p>
+      </article>
     </main>
     <?php require_once 'layout/footer.php'; ?>
   </div>

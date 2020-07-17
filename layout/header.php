@@ -7,7 +7,8 @@
   </figure>
 
   <section class="w80 center txtcenter">
-    <p class="h1-like">Main Title</p>
-    <p class="h2-like">Subtitle</p>
+    <!-- Main heading of the site -->
+    <h1>Main heading of the site</h1>
+    <p>Subtitle describing the site</p>
   </section>
 </header>

@@ -3,7 +3,7 @@
   for ($part = 1; $part <= 4; $part++) {
   ?>
     <section id="footer-part-<?php echo $part; ?>" class="fl w25 small-w100 tiny-w100 man pal">
-      Section <?php echo $part; ?>
+      <h3>Section &#8470;<?php echo $part; ?></h3>
     </section>
   <?php
   }
