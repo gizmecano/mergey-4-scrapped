@@ -12,6 +12,14 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "7.3.*"
+    "php": "7.3.*",
+    "michelf/php-markdown": "1.9.*",
+    "michelf/php-smartypants": "1.8.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Michelf\\Markdown": "vendor/michelf/php-markdown/Michelf",
+      "Michelf\\SmartyPants": "vendor/michelf/php-smartypants/Michelf"
+    }
   }
 }

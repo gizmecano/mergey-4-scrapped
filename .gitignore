@@ -1,6 +1,9 @@
 # System settings
 [Dd]esktop.ini
 
+# Composer dependencies
+/vendor
+
 # Binary files
 *jpg
 *woff2
