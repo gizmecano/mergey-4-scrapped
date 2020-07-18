@@ -82,11 +82,46 @@
   }
 
   footer h3 {
-    font-size: 1.6rem;
-    letter-spacing: .04em;
+    font-family: var(--font-srfi);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.0rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: solid .125rem rgba(var(--tint-pale), .875);
+  }
+
+  footer address,
+  footer ul{
+    font-size: 1.4rem;
+    line-height: 2rem;;
+    letter-spacing: -0.006em;
+    margin-bottom: 1.4rem;
+  }
+
+  footer a {
+    color: rgb(var(--tint-pale));
+    transition: color 1s;
+  }
+  
+  footer a:focus,
+  footer a:hover {
+    color: rgb(var(--tint-fire));
+  }
+
+/* ==========================================================================
+   Block elements
+   ========================================================================== */
+
+/* Address
+   ========================================================================== */
+
+  address {
+    font-style: normal;
+  }
+  
+  address p {
+    margin: 0;
   }
 
 /* ==========================================================================
