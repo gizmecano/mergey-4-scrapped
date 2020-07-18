@@ -10,3 +10,6 @@ $composer = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/composer
 
 /* Prepare variables based on composer notations */
 $site['name'] = ucfirst(substr($composer['name'], -9));
+
+/* Decode masthead notations */
+$masthead = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/masthead.json'), true);

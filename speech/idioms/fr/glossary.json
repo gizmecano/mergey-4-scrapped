@@ -1,4 +1,12 @@
 {
+  "code": {
+    "iso-1": {
+      "ch": "Suisse"
+    },
+    "iso-2": {
+      "ch-vs": "Valais"
+    }
+  },
   "foot": {
     "part-1": "informations",
     "part-2": "projets",
