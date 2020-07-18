@@ -109,6 +109,14 @@
     color: rgb(var(--tint-fire));
   }
 
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer ul li {
+    list-style: none;
+  }
+
 /* ==========================================================================
    Block elements
    ========================================================================== */
@@ -122,6 +130,27 @@
   
   address p {
     margin: 0;
+  }
+
+/* ==========================================================================
+   Reusable classes
+   ========================================================================== */
+
+/* Scalable icons used in lines
+   Code adapted from: "How to work with SVG icons"
+   https://fvsch.com/svg-icons/
+   ========================================================================== */
+
+  ul.scalable li {
+    list-style: none;
+  }
+    
+  ul.scalable li svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+    fill: currentColor;
+    margin-right: .5em;
   }
 
 /* ==========================================================================
