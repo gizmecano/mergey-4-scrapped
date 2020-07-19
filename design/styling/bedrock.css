@@ -63,7 +63,7 @@
 
 /* Main
    ========================================================================== */
-  main#main {
+  main {
     background: rgba(var(--tint-pale), .875);
   }
   @media (min-width : 768px) {
@@ -72,6 +72,66 @@
       border-top: none;
     }
   }
+
+  @media (max-width : 767px) {
+    main.w75 {
+      border-top: solid .125rem rgba(var(--tint-dark), .5);
+      border-left: none;
+    }
+  }
+
+  main p {
+    font-size: 1.6rem;
+    letter-spacing: -0.011em;
+    font-feature-settings: 'frac', 'kern', 'rlig', 'ss01', 'ss02' ;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 80ch;
+  }
+
+/* Decorate main headings according to @media
+   https://codepen.io/gizmecano/pen/GRJrvqO
+   Code forked from: "Flexbox line-through headings"
+   https://codepen.io/raphaelgoetter/pen/GgZQKx
+   ========================================================================== */
+
+main article h2 {
+  font-family: var(--font-srfi);
+  font-weight: 600;
+  text-shadow: .2rem .2rem 0 rgba(var(--tint-dark), .25);
+}
+
+@media (min-width : 768px) {
+  main article h2 {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  main article h2::before,
+  main article h2::after {
+    display: block;
+    content: "";
+    flex: .5em;
+    align-self: center;
+    border-bottom: .125rem solid rgb(var(--tint-core));
+    }
+  main article h2::before {
+    margin-right: .25em
+    }
+  main article h2::after {
+    margin-left: .25em
+    }
+}
+
+@media (max-width : 767px) {
+  main article h2 {
+    text-align: center;
+    padding-bottom: .5em;
+    margin-top: 0;
+    margin-bottom: .75em;
+    border-bottom: .125rem solid rgb(var(--tint-core));
+  }
+}
 
 /* Footer
    ========================================================================== */
