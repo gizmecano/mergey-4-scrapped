@@ -10,4 +10,6 @@
   <link rel="stylesheet" href="assets/lora-cyrillic/lora-cyrillic.css?version=2.210" media="all">
   <!-- Design custom stylesheets -->
   <link rel="stylesheet" href="design/styling/bedrock.css" media="all">
+  <!-- Combine various sizes of shortcut icons -->
+  <?php include_once('required/icon-data.php'); ?>
 </head>

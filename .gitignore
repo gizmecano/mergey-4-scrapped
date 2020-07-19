@@ -5,8 +5,9 @@
 /vendor
 
 # Binary files
-*jpg
-*woff2
+*.jpg
+*.png
+*.woff2
 
 # Bypassed files
 masthead.*
