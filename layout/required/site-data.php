@@ -12,6 +12,7 @@ require_once 'layout/reusable/functions.php';
 $composer = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/composer.json'), true);
 
 /* Prepare variables based on composer notations */
+$site['mail'] = 'web@' . substr($composer['name'], -9);
 $site['name'] = ucfirst(substr($composer['name'], -9));
 
 /* Decode masthead notations */
