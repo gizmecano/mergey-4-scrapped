@@ -13,7 +13,15 @@
     "part-3": "réseaux",
     "part-4": "colophon"
   },
+  "page": {
+    "proof": {
+      "contact": "contact",
+      "imprint": "impressum"
+    }
+  },
   "site": {
-    "motto": "conception internet, édition numérique, etc."
+    "email": "courrier électronique",
+    "motto": "conception internet, édition numérique, etc.",
+    "owner": "propriétaire et éditeur du site"
   }
 }

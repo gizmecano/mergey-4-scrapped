@@ -13,7 +13,15 @@
     "part-3": "networks",
     "part-4": "masthead"
   },
+  "page": {
+    "proof": {
+      "contact": "contact",
+      "imprint": "imprint"
+    }
+  },
   "site": {
-    "motto": "web design, digital publishing, etc."
+    "email": "electronic mail",
+    "motto": "web design, digital publishing, etc.",
+    "owner": "site owner and publisher"
   }
 }
