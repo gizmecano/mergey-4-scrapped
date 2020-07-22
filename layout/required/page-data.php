@@ -17,8 +17,10 @@ if(isset($page['type'])) {
 
 switch ($page['body']) {
   case 'index':
+    $meta['canon'] = $site['host'];
     $meta['title'] = $site['name'];
     break;
   default:
+    $meta['canon'] = $site['host'] . $page['body'] . '/' . $page['type'];
     $meta['title'] = $page['name'] . ' &#8226; ' . $site['name'];
 }
