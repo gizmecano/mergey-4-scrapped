@@ -96,10 +96,28 @@
    https://codepen.io/raphaelgoetter/pen/GgZQKx
    ========================================================================== */
 
-main article h2 {
+main article h2,
+main article h3 {
   font-family: var(--font-srfi);
   font-weight: 600;
   text-shadow: .2rem .2rem 0 rgba(var(--tint-dark), .25);
+}
+
+main article h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  border-bottom: .125rem solid rgb(var(--tint-dark));
+}
+
+main article ul {
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 60ch;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-left: 1.6rem;
 }
 
 @media (min-width : 768px) {
@@ -187,7 +205,13 @@ main article h2 {
   address {
     font-style: normal;
   }
-  
+
+  address hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(var(--tint-dark), .25);
+  }
+
   address p {
     margin: 0;
   }
