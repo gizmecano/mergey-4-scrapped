@@ -3,6 +3,11 @@
   RewriteEngine On
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
+  # Permanent redirects for version 1
+    RewriteRule ^contact$ /proof/contact [R=301]
+  # Permanent redirects for version 3
+    RewriteRule ^about=contact$ /proof/contact [R=301]
+    RewriteRule ^about=impressum$ /proof/imprint [R=301]
   # Rules for main layouts
     RewriteRule ^proof/([a-zA-Z0-9\-]+)$ /proof.php?file=$1 [QSA,L]
 </IfModule>
