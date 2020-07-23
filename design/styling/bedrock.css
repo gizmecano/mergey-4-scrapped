@@ -49,6 +49,10 @@
     padding-top: 2rem;
   }
 
+  header h1 {
+    text-shadow: .2rem .2rem 0 rgba(var(--tint-dark), .25);
+  }
+
   header h1,
   header h1 + p {
     font-family: var(--font-srfi);
@@ -104,6 +108,7 @@ main article h3 {
 }
 
 main article h3 {
+  letter-spacing: 0.017em;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
   padding-top: .6rem;
