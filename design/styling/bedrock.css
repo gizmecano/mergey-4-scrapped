@@ -116,13 +116,16 @@ main article h3 {
   border-bottom: .125rem solid rgb(var(--tint-dark));
 }
 
+main article ol,
 main article ul {
   word-wrap: break-word;
   hyphens: auto;
   max-width: 60ch;
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
   padding-left: 1.6rem;
+  text-align: justify;
 }
 
 @media (min-width : 768px) {
@@ -229,6 +232,10 @@ main article ul {
    Code adapted from: "How to work with SVG icons"
    https://fvsch.com/svg-icons/
    ========================================================================== */
+
+  ul.scalable {
+    margin-left: 0;
+  }
 
   ul.scalable li {
     list-style: none;
