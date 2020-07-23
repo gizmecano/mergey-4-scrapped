@@ -3,6 +3,6 @@
     <a itemprop="email" href="mailto:<?php echo $site['mail']; ?>?subject=<?php echo ucfirst($page['type']) ?>"><?php echo $site['mail']; ?></a>
   </p>
   <p>
-    <a itemprop="url" href="<?php echo $composer['authors'][0]['homepage'] . $page['type']; ?>"><?php echo $composer['authors'][0]['homepage'] . $page['type']; ?></a>
+    <a itemprop="url" href="<?php echo $meta['canon']; ?>"><?php echo $meta['canon']; ?></a>
   </p>
 </div>
