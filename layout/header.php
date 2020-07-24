@@ -5,7 +5,9 @@
     </a>
   </div>
   <div class="w75 center txtcenter">
-    <h1><?php echo $site['name']; ?></h1>
+    <h1>
+      <a href="/"><?php echo $site['name']; ?></a>
+    </h1>
     <p><?php echo ucfirst($glossary['site']['motto']); ?></p>
   </div>
 </header>

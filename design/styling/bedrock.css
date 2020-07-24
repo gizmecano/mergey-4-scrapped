@@ -60,6 +60,18 @@
     font-weight: 600;
   }
 
+  header h1 a {
+    color: rgb(var(--tint-dark));
+    transition: color 1s;
+    text-decoration-color: rgb(var(--tint-core));
+  }
+  
+  header h1 a:focus,
+  header h1 a:hover {
+    color: rgb(var(--tint-core));
+    text-decoration-color: rgb(var(--tint-core));
+  }
+
   header h1 + p {
     font-size: 2rem;
     opacity: .75;
