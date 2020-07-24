@@ -17,6 +17,10 @@
     "proof": {
       "contact": "contact",
       "imprint": "impressum"
+    },
+    "stall": {
+      "activities": "activités",
+      "principles": "principes"
     }
   },
   "site": {
