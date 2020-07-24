@@ -6,6 +6,6 @@
 </address>
 
 <ul>
-  <li><a href="/proof/contact"><?php echo ucfirst($glossary['page']['proof']['contact']); ?></a></li>
-  <li><a href="/proof/imprint"><?php echo ucfirst($glossary['page']['proof']['imprint']); ?></a></li>
+  <li><a href="/contact"><?php echo ucfirst($glossary['page']['proof']['contact']); ?></a></li>
+  <li><a href="/imprint"><?php echo ucfirst($glossary['page']['proof']['imprint']); ?></a></li>
 </ul>
