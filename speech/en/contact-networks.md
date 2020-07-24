@@ -1,1 +1,1 @@
-Morevover, you can also consult the following various social networks:
+In addition, if you wish to contact me through a social network, you can consult my following profiles:
