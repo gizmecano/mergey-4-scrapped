@@ -8,7 +8,7 @@
     }
   },
   "foot": {
-    "part-1": "informations",
+    "part-1": "business",
     "part-2": "projects",
     "part-3": "networks",
     "part-4": "masthead"
@@ -20,6 +20,7 @@
     }
   },
   "site": {
+    "build": "source code",
     "email": "electronic mail",
     "motto": "web design, digital publishing, etc.",
     "owner": "site owner and publisher"
