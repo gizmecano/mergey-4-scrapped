@@ -1,4 +1,4 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . '/speech/idioms/' . $page['lang'] . '/'; ?>
+<?php $path = $_SERVER['DOCUMENT_ROOT'] . '/speech/' . $page['lang'] . '/'; ?>
 <h3><?php echo ucfirst($glossary['site']['email']); ?></h3>
 <?php echo mrg_text_full($path . $page['type'] . '-email.md', $page['lang']); ?>
 <address itemscope itemtype="http://schema.org/Person">

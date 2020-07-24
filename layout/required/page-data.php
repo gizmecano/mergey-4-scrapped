@@ -8,7 +8,7 @@ if (empty($page['lang'])) {
 }
 
 /* Decode languages glossaries */
-$glossary = json_decode(file_get_contents('speech/idioms/' . $page['lang'] . '/glossary.json'), true);
+$glossary = json_decode(file_get_contents('speech/' . $page['lang'] . '/glossary.json'), true);
 
 /* Compose specific metadata according to page type */
 if (isset($page['type'])) {
