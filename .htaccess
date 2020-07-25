@@ -4,14 +4,16 @@
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
 
-  # Permanent redirects for version 1
-
-  # Permanent redirects for version 2
+  # Temporarily moved pages version 1
+    RewriteRule ^services$ /error-302 [R=302,L]
 
   # Permanent redirects for version 3
     RewriteRule ^about=contact$ /contact [R=301]
     RewriteRule ^about=impressum$ /imprint [R=301]
     RewriteRule ^information=introduction$ /activities [R=301]
+
+  # Temporarily moved pages (error 302)
+    RewriteRule ^information=services$ /error-302 [R=302,L]
 
   # Explicit rewrite rules for root positioned pages
     RewriteRule ^contact$ /proof.php?file=contact [QSA,L]
