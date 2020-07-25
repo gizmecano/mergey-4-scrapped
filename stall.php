@@ -21,15 +21,11 @@ require_once 'layout/required/page-data.php';
     <main id="main" class="w75 small-w100 tiny-w100 man pal">
       <article class="w100 small-w100 tiny-w100 fr">
         <h2><?php echo $page['name']; ?></h2>
-<?php
-if($page['lang'] != $site['lang']) {
-  include 'layout/reusable/div-alert-language.php';
-}
-?>
-
-
         <?php
-        /* Compose query for files matching defined path */
+        if ($page['lang'] != $site['lang']) {
+          include 'layout/reusable/div-alert-language.php';
+        }
+        /* Search for files matching the defined path */
         $path = 'speech/' . $page['lang'] . '/';
         $mark = 1;
         foreach (glob($path . $page['body'] . '-' . $page['type'] . '*.md') as $part[$mark]) {

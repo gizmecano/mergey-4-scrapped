@@ -21,7 +21,7 @@ require_once 'layout/required/page-data.php';
       <article class="w100 small-w100 tiny-w100 fr">
         <h2><?php echo $page['name']; ?></h2>
         <?php
-        /* Compose query for files matching defined path */
+        /* Search for files matching the defined path */
         $path = 'layout/parceled/';
         $mark = 1;
         foreach (glob($path . $page['body'] . '-' . $page['type'] . '*.php') as $part[$mark]) {

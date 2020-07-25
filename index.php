@@ -16,9 +16,9 @@ require_once 'layout/required/page-data.php';
     <?php require_once 'layout/header.php'; ?>
     <main id="main" class="w75 small-w100 tiny-w100 man pal">
       <article class="w100 small-w100 tiny-w100 fr">
-        <!-- Main content of the page -->
-        <h2>Title of the article</h2>
-        <p>Paragraph of content.</p>
+        <h2>
+          <!-- Name of the page -->
+        </h2>
       </article>
     </main>
     <?php require_once 'layout/footer.php'; ?>
