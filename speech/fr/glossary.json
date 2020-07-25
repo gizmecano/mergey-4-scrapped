@@ -15,6 +15,10 @@
     "part-4": "colophon"
   },
   "page": {
+    "error" : {
+      "302": "page indisponible",
+      "404": "page introuvable"
+    },
     "proof": {
       "contact": "contact",
       "imprint": "impressum"

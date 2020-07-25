@@ -15,7 +15,11 @@
 
   # Explicit rewrite rules for root positioned pages
     RewriteRule ^contact$ /proof.php?file=contact [QSA,L]
+    RewriteRule ^error-([a-zA-Z0-9\-]+)$ /error.php?file=$1 [QSA,L]
     RewriteRule ^imprint$ /proof.php?file=imprint [QSA,L]
     RewriteRule ^activities$ /stall.php?file=activities [QSA,L]
     RewriteRule ^principles$ /stall.php?file=principles [QSA,L]
 </IfModule>
+
+ErrorDocument 302 /error-302
+ErrorDocument 404 /error-404
