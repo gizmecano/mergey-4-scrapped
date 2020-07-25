@@ -249,6 +249,43 @@ main article ul {
   }
 
 /* ==========================================================================
+   Accessible roles
+   ========================================================================== */
+
+   [role="alert"] {
+    background-color: rgb(var(--tint-pale));
+    color: rgb(var(--tint-core));
+    border: solid .125rem rgb(var(--tint-core));
+    border-radius: 1em;
+   }
+
+  @media (min-width : 768px) {
+    [role="alert"]  {
+      max-width: 36.5em;
+      margin-left: 2em;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding: 1em;
+    }
+  }
+
+  @media (max-width : 767px) {
+    [role="alert"]  {
+      padding: 2rem;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+  }
+
+  [role="alert"] p {
+    margin-bottom: 0;
+  }
+
+
+/* ==========================================================================
    Reusable classes
    ========================================================================== */
 
