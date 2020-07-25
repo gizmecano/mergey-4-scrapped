@@ -11,3 +11,6 @@
 
 # Bypassed files
 masthead.*
+
+# Bypassed folders
+/.scope
