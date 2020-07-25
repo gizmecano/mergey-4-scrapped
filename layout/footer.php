@@ -1,4 +1,5 @@
 <footer id="footer" class="w100 man">
+  <h2 class="visually-hidden"><?php echo ucfirst($glossary['foot']['hidden']); ?></h2>
   <?php
   for ($part = 1; $part <= 4; $part++) {
   ?>

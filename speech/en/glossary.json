@@ -8,6 +8,7 @@
     }
   },
   "foot": {
+    "hidden": "page footer",
     "part-1": "business",
     "part-2": "projects",
     "part-3": "networks",

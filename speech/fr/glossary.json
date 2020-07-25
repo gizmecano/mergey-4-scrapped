@@ -8,6 +8,7 @@
     }
   },
   "foot": {
+    "hidden": "pied-de-page",
     "part-1": "travaux",
     "part-2": "projets",
     "part-3": "réseaux",
