@@ -17,14 +17,14 @@ if (isset($page['type'])) {
 
 /* Compose canonical link according to page type */
 switch ($page['body']) {
+  case 'error':
+    $meta['canon'] = $site['host'] . $page['body'] . '-' . $page['type'];
+    break;
   case 'index':
     $meta['canon'] = $site['host'];
     break;
-  case 'proof':
-    $meta['canon'] = $site['host'] . $page['type'];
-    break;
   default:
-    $meta['canon'] = $site['host'] . $page['body'] . '/' . $page['type'];
+    $meta['canon'] = $site['host'] . $page['type'];
 }
 
 /* Compose page title according to page type */
