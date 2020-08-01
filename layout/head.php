@@ -6,6 +6,7 @@
   <title><?php echo $meta['title'] ?></title>
   <meta name="description" content="<?php echo $meta['blurb']; ?>">
   <link rel="canonical" href="<?php echo $meta['canon']; ?>">
+  <?php include_once('required/meta-data.php'); ?>
   <!-- Implement independent components -->
   <link rel="stylesheet" href="assets/knacss/knacss.css?version=7.1.3" media="all">
   <link rel="stylesheet" href="assets/inter/inter.css?version=3.13" media="all">
