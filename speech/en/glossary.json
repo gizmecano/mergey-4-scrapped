@@ -19,6 +19,9 @@
       "302": "page not available",
       "404": "page not found"
     },
+    "index": {
+      "hidden": "Home page"
+    },
     "proof": {
       "contact": "contact",
       "imprint": "imprint"
