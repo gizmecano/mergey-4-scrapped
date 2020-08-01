@@ -35,3 +35,19 @@ switch ($page['body']) {
   default:
     $meta['title'] = $page['name'] . ' &#8226; ' . $site['name'];
 }
+
+/* Define description content according to page type */
+if (empty($meta['blurb'])) {
+  switch ($page['body']) {
+    case 'error':
+    case 'proof':
+      $meta['blurb'] = ucfirst($glossary['page'][$page['body']][$page['type']]);
+      break;
+    case 'index':
+      $meta['blurb'] = $site['name'] . ' &#8226; ' . $glossary['site']['motto'];
+      break;
+    case 'stall':
+      $meta['blurb'] = $site['name'] . ' &#8226; ' . ucfirst($glossary['page'][$page['body']][$page['type']]);
+      break;
+  }
+}
