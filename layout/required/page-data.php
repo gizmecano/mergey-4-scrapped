@@ -51,3 +51,8 @@ if (empty($meta['blurb'])) {
       break;
   }
 }
+
+/* Define default image if not previously settled */
+if (empty($meta['image'])) {
+  $meta['image'] = $site['host'] . 'design/artwork/brands/portable/mergey.ch.png';
+}
