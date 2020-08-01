@@ -1,3 +1,6 @@
+<!-- Schema properties -->
+<meta itemprop="name" content="<?php echo $meta['title']; ?>">
+<meta itemprop="description" content="<?php echo $meta['blurb']; ?>">
 <!-- OpenGraph properties -->
 <meta property="og:locale" content="fr_CH">
 <meta property="og:type" content="website">
