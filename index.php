@@ -5,6 +5,9 @@ $page['body'] = basename($_SERVER['PHP_SELF'], ".php");
 /* Include main requirements */
 require_once 'layout/required/site-data.php';
 require_once 'layout/required/page-data.php';
+
+/* Define specific path for content */
+$page['path'] = 'speech/' . $page['lang'] . '/' . $page['body'];
 ?>
 
 <!doctype html>
@@ -16,10 +19,13 @@ require_once 'layout/required/page-data.php';
     <?php require_once 'layout/header.php'; ?>
     <main id="main" class="w75 small-w100 tiny-w100 man pal">
       <article class="w100 small-w100 tiny-w100 fr">
-        <h2 class="visually-hidden"><?php echo ucfirst($glossary['page']['index']['hidden']); ?></h2>
-        <div class="w75 small-w100 tiny-w100 center">
-          <img src="<?php echo $meta['image']; ?>" alt="<?php echo $meta['blurb'];?>">
-        </div>
+        <header class="w75 small-w100 tiny-w100 fl">
+          <h2 class="visually-hidden"><?php echo ucfirst($glossary['page']['index']['hidden']); ?></h2>
+          <?php echo mrg_text_full($page['path'] . '-motto.md', $page['lang']); ?>
+          <img src="<?php echo $meta['image']; ?>" alt="<?php echo $meta['blurb']; ?>">
+          <?php echo mrg_text_full($page['path'] . '-axiom.md', $page['lang']);
+          ?>
+        </header>
       </article>
     </main>
     <?php require_once 'layout/footer.php'; ?>
@@ -29,3 +35,5 @@ require_once 'layout/required/page-data.php';
 </body>
 
 </html>
+
+<?php unset($page); ?>
