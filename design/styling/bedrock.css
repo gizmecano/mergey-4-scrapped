@@ -354,3 +354,19 @@ main article h3 {
     z-index: -2;
     filter: grayscale(.75) opacity(.75) contrast(2.5);
   }
+
+/* ==========================================================================
+   Temporary styles
+   ========================================================================== */
+  
+/* Index layout
+   ========================================================================== */
+
+#index main article img {
+  border: solid .125rem rgb(var(--tint-core));
+  border-radius: 1em;
+}
+
+#index main article img:hover {
+  filter: grayscale(.25);
+}
