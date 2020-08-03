@@ -3,6 +3,7 @@
   RewriteEngine On
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
 
   # Temporarily moved pages version 1
     RewriteRule ^services$ /error-302 [R=302,L]
@@ -15,9 +16,12 @@
   # Temporarily moved pages (error 302)
     RewriteRule ^information=services$ /error-302 [R=302,L]
 
+  # Define rewrite rules for basic home page
+    RewriteRule ^index\.(htm|html|php) / [R=301,QSA,L]
+
   # Explicit rewrite rules for root positioned pages
-    RewriteRule ^contact$ /proof.php?file=contact [QSA,L]
     RewriteRule ^error-([a-zA-Z0-9\-]+)$ /error.php?file=$1 [QSA,L]
+    RewriteRule ^contact$ /proof.php?file=contact [QSA,L]
     RewriteRule ^imprint$ /proof.php?file=imprint [QSA,L]
     RewriteRule ^activities$ /stall.php?file=activities [QSA,L]
     RewriteRule ^principles$ /stall.php?file=principles [QSA,L]
