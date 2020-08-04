@@ -32,7 +32,6 @@ require_once 'layout/required/page-data.php';
           echo mrg_text_full($part[$mark], $page['lang']);
           $mark++;
         }
-        unset($mark, $part, $path);
         ?>
       </article>
     </main>
@@ -42,3 +41,5 @@ require_once 'layout/required/page-data.php';
 </body>
 
 </html>
+
+<?php unset($mark, $page, $page, $path); ?>
