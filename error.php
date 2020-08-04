@@ -24,7 +24,6 @@ require_once 'layout/required/page-data.php';
           <?php
           $path = 'speech/' . $page['lang'] . '/error-' . $page['type'] . '.md';
           echo mrg_text_full($path, $page['lang']);
-          unset($path);
           ?>
         </div>
       </article>
@@ -36,3 +35,5 @@ require_once 'layout/required/page-data.php';
 </body>
 
 </html>
+
+<?php unset($page, $path); ?>
