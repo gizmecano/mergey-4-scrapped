@@ -407,3 +407,13 @@ main article h3 {
     font-size: 1.8rem;
   }
 }
+
+#index main article section:first-of-type {
+  margin-top: 1.6rem;
+  padding-top:1.6rem;
+  border-top: solid .125rem rgba(var(--tint-dark), .75);
+}
+
+#index main article section:first-of-type p {
+  max-width: 60ch;
+}

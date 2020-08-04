@@ -28,6 +28,9 @@ $page['path'] = 'speech/' . $page['lang'] . '/' . $page['body'];
           <?php echo mrg_text_full($page['path'] . '-axiom.md', $page['lang']);
           ?>
         </header>
+        <section class="w100 small-w100 tiny-w100">
+          <?php echo mrg_text_full($page['path'] . '-patch.md', $site['lang']); ?>
+        </section>
       </article>
     </main>
     <?php require_once 'layout/footer.php'; ?>
