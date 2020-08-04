@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*.json
+Disallow: /*.lock
+Disallow: /.*conf*
+Disallow: /.git*
+Disallow: /.hta*
+Disallow: /assets/
+Disallow: /vendor/
