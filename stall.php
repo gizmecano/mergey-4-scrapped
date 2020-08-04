@@ -42,4 +42,4 @@ require_once 'layout/required/page-data.php';
 
 </html>
 
-<?php unset($mark, $page, $page, $path); ?>
+<?php unset($mark, $page, $path); ?>
