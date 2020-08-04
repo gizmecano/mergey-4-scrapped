@@ -1,0 +1,1 @@
+This website is currently on recasting and doesn't display yet informations about the projects I worked on previously. For the time being, you may check various other professional profiles, such as [LinkedIn](https://www.linkedin.com/in/mergey/) or [Stack Overflow](https://stackoverflow.com/story/mergey), to have an overview of some of these achievements.
