@@ -28,7 +28,6 @@ require_once 'layout/required/page-data.php';
           include $part[$mark];
           $mark++;
         }
-        unset($mark, $part, $path);
         ?>
       </article>
     </main>
@@ -38,3 +37,5 @@ require_once 'layout/required/page-data.php';
 </body>
 
 </html>
+
+<?php unset($mark, $page, $page, $path); ?>
