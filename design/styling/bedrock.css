@@ -373,14 +373,11 @@ main article h3 {
   margin-bottom:2rem;
 }
 
-#index main article header img:hover {
-  filter: grayscale(.25);
-}
-
 #index main article header p {
   font-family: var(--font-srfi);
   font-style: italic;
   text-align: left;
+  max-width: 60ch;
 }
 
 #index main article header p:first-of-type{
@@ -394,4 +391,19 @@ main article h3 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+
+@media (min-width : 768px) {
+  #index main article header p:first-of-type{
+    max-width: 75%;
+  }
+}
+
+@media (max-width : 767px) {
+  #index main article header p:first-of-type{
+    font-size: 2.4rem;
+  }
+  #index main article header p:not(:first-of-type) {
+    font-size: 1.8rem;
+  }
 }
