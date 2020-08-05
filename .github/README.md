@@ -8,11 +8,11 @@ This repository contains source code of a [handmade portfolio](http:mergey.ch/) 
 
 Currently, the main layouts necessary for the website running  can be presented in the following list:
 
-1. `error.php`: composed with plain `Markdown` files for displaying error related page according to response status codes (cf. #19)
-2. `index.php`: composed with modular `PHP` inclusions for displaying temporary home page content (cf. #2, #20)
-3. `model.php`: generic minimal template for all root layouts, never displayed in any way (cf. #2)
-4. `proof.php`: composed with modular `PHP` inclusions for displaying legal or necessary data (cf. #15)
-5. `stall.php`: composed with plain `Markdown` files for displaying information related to activities (cf. #18)
+1. `error.php`: composed with plain `Markdown` files for displaying error related page according to response status codes
+2. `index.php`: composed with modular `PHP` inclusions for displaying temporary home page content
+3. `model.php`: generic minimal template for all root layouts, never displayed in any way
+4. `proof.php`: composed with modular `PHP` inclusions for displaying legal or necessary data
+5. `stall.php`: composed with plain `Markdown` files for displaying information related to activities
 
 ## Project folders tree
 
