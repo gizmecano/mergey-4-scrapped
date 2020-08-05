@@ -2,5 +2,16 @@
 * text eol=crlf
 
 # Detect text files
+*.css         text
 *.git*        text
+*.hta*        text
+*.json        text
+*.lock        text
+*.php         text
+*.svg         text
 .editorconfig text
+
+# Define Binary files
+*.jpg         binary
+*.png         binary
+*.woff2       binary

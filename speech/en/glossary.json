@@ -1,0 +1,40 @@
+{
+  "code": {
+    "iso-1": {
+      "ch": "Switzerland"
+    },
+    "iso-2": {
+      "ch-vs": "Wallis"
+    }
+  },
+  "foot": {
+    "hidden": "page footer",
+    "part-1": "business",
+    "part-2": "projects",
+    "part-3": "networks",
+    "part-4": "masthead"
+  },
+  "page": {
+    "error" : {
+      "302": "page not available",
+      "404": "page not found"
+    },
+    "index": {
+      "hidden": "Home page"
+    },
+    "proof": {
+      "contact": "contact",
+      "imprint": "imprint"
+    },
+    "stall": {
+      "activities": "activities",
+      "principles": "principles"
+    }
+  },
+  "site": {
+    "build": "source code",
+    "email": "electronic mail",
+    "motto": "web design, digital publishing, etc.",
+    "owner": "site owner and publisher"
+  }
+}

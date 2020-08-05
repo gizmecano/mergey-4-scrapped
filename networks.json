@@ -1,0 +1,24 @@
+{
+  "network": [
+    {
+      "name": "DeviantArt",
+      "link": "https://www.deviantart.com/gizmecano"
+    },
+    {
+      "name": "Dribbble",
+      "link": "https://dribbble.com/gizmecano"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/gizmecano"
+    },
+    {
+      "name": "Medium",
+      "link": "https://medium.com/@gizmecano"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/gizmecano"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "code": {
+    "iso-1": {
+      "ch": "Suisse"
+    },
+    "iso-2": {
+      "ch-vs": "Valais"
+    }
+  },
+  "foot": {
+    "hidden": "pied-de-page",
+    "part-1": "travaux",
+    "part-2": "projets",
+    "part-3": "réseaux",
+    "part-4": "colophon"
+  },
+  "page": {
+    "error" : {
+      "302": "page indisponible",
+      "404": "page introuvable"
+    },
+    "index": {
+      "hidden": "Page d'accueil"
+    },
+    "proof": {
+      "contact": "contact",
+      "imprint": "impressum"
+    },
+    "stall": {
+      "activities": "activités",
+      "principles": "principes"
+    }
+  },
+  "site": {
+    "build": "code source",
+    "email": "courrier électronique",
+    "motto": "conception internet, édition numérique, etc.",
+    "owner": "propriétaire et éditeur du site"
+  }
+}

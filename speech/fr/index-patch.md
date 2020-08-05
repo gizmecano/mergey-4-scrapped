@@ -1,0 +1,1 @@
+Ce site internet est en cours de refonte et ne présente pas encore d'informations concernant les projets auxquels j'ai contribués. Pour le moment, vous pouvez consulter certains autres profils professionnels, tels que [LinkedIn](https://www.linkedin.com/in/mergey/) ou [Stack Overflow](https://stackoverflow.com/story/mergey), pour avoir un aperçu de certaines de ces réalisations.

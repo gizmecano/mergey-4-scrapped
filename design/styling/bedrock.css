@@ -1,0 +1,419 @@
+/* ==========================================================================
+   Custom properties
+   ========================================================================== */
+  :root {
+  /* Define color palette (using RGB values) */
+  --tint-dark: 54, 69, 79; /* Charcoal */
+  --tint-pale: 242, 240, 230; /* Alabaster */
+  --tint-core: 227, 66, 52; /* Vermilion */
+  --tint-fire: 224, 152, 66; /*Fire Blush */
+  /* Define font stack */
+  --font-sans: 'Inter var', sans-serif; /* Sans-serif font */
+  --font-srfi: 'Lora-VF-i', serif; /* Italic serif font */
+  }
+  
+/* ==========================================================================
+   Sectionning elements
+   ========================================================================== */
+  
+/* Body
+   ========================================================================== */
+  body {
+    font-family: var(--font-sans);
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(var(--tint-dark));
+  }
+  body .flex-container {
+    z-index: 0;
+    min-height: 100vh;
+  }
+
+/* Header
+   ========================================================================== */
+  header {
+    background: rgba(var(--tint-pale), .75);
+  }
+
+  header a svg {
+    fill: rgb(var(--tint-core));
+    transition: fill 2s, transform 2s;
+  }
+
+  header a svg:hover {
+    fill: rgb(var(--tint-fire));
+    transform: rotate(360deg);
+  }
+
+  header div + div {
+    padding-top: 2rem;
+  }
+
+  header h1 {
+    text-shadow: .2rem .2rem 0 rgba(var(--tint-dark), .25);
+  }
+
+  header h1,
+  header h1 + p {
+    font-family: var(--font-srfi);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  header h1 a {
+    color: rgb(var(--tint-dark));
+    transition: color 1s;
+    text-decoration-color: rgb(var(--tint-core));
+  }
+  
+  header h1 a:focus,
+  header h1 a:hover {
+    color: rgb(var(--tint-core));
+    text-decoration-color: rgb(var(--tint-core));
+  }
+
+  header h1 + p {
+    font-size: 2rem;
+    opacity: .75;
+  }
+
+/* Main
+   ========================================================================== */
+  main {
+    background: rgba(var(--tint-pale), .875);
+  }
+  @media (min-width : 768px) {
+    main.w75 {
+      border-left: solid .125rem rgba(var(--tint-dark), .5);
+      border-top: none;
+    }
+  }
+
+  @media (max-width : 767px) {
+    main.w75 {
+      border-top: solid .125rem rgba(var(--tint-dark), .5);
+      border-left: none;
+    }
+  }
+
+  main a {
+    color: rgb(var(--tint-dark));
+    transition: color 1s;
+    text-decoration-color: rgb(var(--tint-core));
+  }
+  
+  main a:focus,
+  main a:hover {
+    color: rgb(var(--tint-core));
+    text-decoration-color: rgb(var(--tint-core));
+  }
+
+  main article ol,
+  main article ul {
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 60ch;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    margin-left: 1.6rem;
+    padding-left: 1.6rem;
+    text-align: justify;
+  }
+
+  main p {
+    font-size: 1.6rem;
+    letter-spacing: -0.011em;
+    font-feature-settings: 'frac', 'kern', 'rlig', 'ss01', 'ss02' ;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 80ch;
+  }
+
+/* Decorate main headings according to @media
+   https://codepen.io/gizmecano/pen/GRJrvqO
+   Code forked from: "Flexbox line-through headings"
+   https://codepen.io/raphaelgoetter/pen/GgZQKx
+   ========================================================================== */
+
+main article h2,
+main article h3 {
+  font-family: var(--font-srfi);
+  font-weight: 600;
+  text-shadow: .2rem .2rem 0 rgba(var(--tint-dark), .25);
+}
+
+main article h3 {
+  letter-spacing: 0.017em;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  border-bottom: .125rem solid rgb(var(--tint-dark));
+}
+
+@media (min-width : 768px) {
+  main article h2 {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  main article h2::before,
+  main article h2::after {
+    display: block;
+    content: "";
+    flex: .5em;
+    align-self: center;
+    border-bottom: .125rem solid rgb(var(--tint-core));
+    }
+  main article h2::before {
+    margin-right: .25em
+    }
+  main article h2::after {
+    margin-left: .25em
+    }
+}
+
+@media (max-width : 767px) {
+  main article h2 {
+    text-align: center;
+    padding-bottom: .5em;
+    margin-top: 0;
+    margin-bottom: .75em;
+    border-bottom: .125rem solid rgb(var(--tint-core));
+  }
+}
+
+/* Footer
+   ========================================================================== */
+  footer {
+    background: rgba(var(--tint-dark), .875);
+    color: rgb(var(--tint-pale));
+    border-top: solid .125rem rgb(var(--tint-dark));
+  }
+
+  footer h3 {
+    font-family: var(--font-srfi);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid .125rem rgba(var(--tint-pale), .875);
+  }
+
+  footer address,
+  footer ul{
+    font-size: 1.4rem;
+    line-height: 2rem;;
+    letter-spacing: -0.006em;
+    margin-bottom: 1.4rem;
+    font-feature-settings: 'frac', 'kern', 'rlig', 'ss01', 'ss02' ;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  footer a {
+    color: rgb(var(--tint-pale));
+    transition: color 1s;
+  }
+  
+  footer a:focus,
+  footer a:hover {
+    color: rgb(var(--tint-fire));
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer ul li {
+    list-style: none;
+  }
+
+/* ==========================================================================
+   Block elements
+   ========================================================================== */
+
+/* Address
+   ========================================================================== */
+
+  address {
+    font-style: normal;
+  }
+
+  address hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(var(--tint-dark), .25);
+  }
+
+  address p {
+    margin: 0;
+  }
+
+/* ==========================================================================
+   Inline elements
+   ========================================================================== */
+
+/* Abbreviations
+   ========================================================================== */
+
+  abbr[title] {
+    color: rgba(var(--tint-dark), .875);
+    text-decoration-color: rgb(var(--tint-core));
+  }
+
+/* ==========================================================================
+   Accessible roles
+   ========================================================================== */
+
+   [role="alert"] {
+    background-color: rgb(var(--tint-pale));
+    color: rgb(var(--tint-core));
+    border: solid .125rem rgb(var(--tint-core));
+    border-radius: 1em;
+   }
+
+  @media (min-width : 768px) {
+    [role="alert"]  {
+      max-width: 36.5em;
+      margin-left: 2em;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding: 1em;
+    }
+  }
+
+  @media (max-width : 767px) {
+    [role="alert"]  {
+      padding: 2rem;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+  }
+
+  [role="alert"] p {
+    margin-bottom: 0;
+  }
+
+
+/* ==========================================================================
+   Reusable classes
+   ========================================================================== */
+
+/* Scalable icons used in lines
+   Code adapted from: "How to work with SVG icons"
+   https://fvsch.com/svg-icons/
+   ========================================================================== */
+
+  ul.scalable {
+    margin-left: 0;
+  }
+
+  ul.scalable li {
+    list-style: none;
+  }
+    
+  ul.scalable li svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+    fill: currentColor;
+    margin-right: .5em;
+  }
+
+/* ==========================================================================
+   Specific identities
+   ========================================================================== */
+
+/* Full Page Background
+   Code adapted from: "Perfect Full Page Background Image"
+   https://css-tricks.com/perfect-full-page-background-image/#article-header-id-2
+   ========================================================================== */
+   #full-page-background {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+   }
+    
+  #full-page-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: -2;
+    filter: grayscale(.75) opacity(.75) contrast(2.5);
+  }
+
+/* ==========================================================================
+   Temporary styles
+   ========================================================================== */
+  
+/* Index layout
+   ========================================================================== */
+
+#index main article header{
+  background-color: transparent;
+}
+
+#index main article header img {
+  border: solid .125rem rgb(var(--tint-core));
+  border-radius: 1em;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+#index main article header p {
+  font-family: var(--font-srfi);
+  font-style: italic;
+  text-align: left;
+  max-width: 60ch;
+}
+
+#index main article header p:first-of-type{
+  color: rgb(var(--tint-core));
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#index main article header p:not(:first-of-type) {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (min-width : 768px) {
+  #index main article header p:first-of-type{
+    max-width: 75%;
+  }
+}
+
+@media (max-width : 767px) {
+  #index main article header p:first-of-type{
+    font-size: 2.4rem;
+  }
+  #index main article header p:not(:first-of-type) {
+    font-size: 1.8rem;
+  }
+}
+
+#index main article section:first-of-type {
+  margin-top: 1.6rem;
+  padding-top:1.6rem;
+  border-top: solid .125rem rgba(var(--tint-dark), .75);
+}
+
+#index main article section:first-of-type p {
+  max-width: 60ch;
+}
