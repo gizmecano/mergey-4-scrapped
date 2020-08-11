@@ -11,6 +11,15 @@
     }
   ],
   "minimum-stability": "stable",
+  "require-dev": {
+    "phpcompatibility/php-compatibility": "*",
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "prefer-stable": true,
+  "scripts": {
+    "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility",
+    "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility"
+  },
   "require": {
     "php": "7.3.*",
     "michelf/php-markdown": "1.9.*",
