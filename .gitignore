@@ -11,6 +11,7 @@
 
 # Bypassed files
 masthead.*
+phpinfo.php
 
 # Bypassed folders
 /.scope
