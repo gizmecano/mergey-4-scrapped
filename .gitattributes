@@ -11,7 +11,11 @@
 *.svg         text
 .editorconfig text
 
-# Define Binary files
+# Define binary files
 *.jpg         binary
 *.png         binary
 *.woff2       binary
+
+# Override folders detections
+.github/* linguist-documentation
+assets/*  linguist-vendored
