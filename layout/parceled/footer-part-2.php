@@ -1,6 +1,6 @@
 <?php
-/* TODO Create dynamic loop to display specific projects
-   (Currently, it temporarily contains only hard-coded HTML inclusion) */
+/* TODO #35 Display selected projects in footer
+   (Currently, this section temporarily contains only hard-coded HTML inclusion) */
 ?>
 <ul>
   <li><a href="http://clepsydre.free.fr/">La Clepsydre</a></li>
