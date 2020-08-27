@@ -9,3 +9,18 @@
   <hr />
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/layout/reusable/div-itemprop-contactpoint.php'; ?>
 </address>
+
+<address class="w50 small-w100 tiny-w100 fl" itemscope itemtype="http://schema.org/Organization">
+  <h3 itemprop="potentialAction"><?php echo ucfirst($glossary['host']['server']); ?></h3>
+  <div itemprop="name">
+    <p><a itemprop="url" href="<?php echo $masthead['ha']['iu']; ?>"><?php echo $masthead['ha']['ln']; ?></a></p>
+  </div>
+  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <p><span itemprop="streetAddress"><?php echo $masthead['ha']['sa']; ?></span></p>
+    <p>
+      <span itemprop="postalCode"><?php echo $masthead['ha']['pc']; ?></span>
+      <span itemprop="addressLocality"><?php echo $masthead['ha']['al']; ?></span>
+    </p>
+    <p>(<span itemprop="addressCountry"><?php echo $glossary['code']['iso-1'][$masthead['ha']['ac']]; ?></span>)</p>
+  </div>
+</address>
