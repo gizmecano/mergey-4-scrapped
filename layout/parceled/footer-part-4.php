@@ -12,9 +12,5 @@
 
 <ul class="u-small">
   <li>2010&#8211;<?php echo date('Y'); ?></li>
-  <li>
-    <a href="<?php echo $composer['homepage']; ?>">
-      <?php echo ucfirst($glossary['site']['build']); ?>
-    </a>
-  </li>
+  <li><a href="<?php echo $composer['homepage']; ?>"><?php echo ucfirst($glossary['host']['source']); ?></a></li>
 </ul>
