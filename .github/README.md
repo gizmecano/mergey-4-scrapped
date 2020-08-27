@@ -18,24 +18,25 @@ The main layouts necessary for the website running can be presented in the follo
 
 The general tree structure of the project is presented as follows:
 
-- `design`
-  - `design/artwork`
-    - `design/artwork/backgrounds`
-      - `design/artwork/backgrounds/generic`
-    - `design/artwork/brands`
-      - `design/artwork/brands/portable`
-      - `design/artwork/brands/scalable`
-  - `design/styling`
-- `layout`
-  - `layout/parceled`
-  - `layout/required`
-  - `layout/reusable`
-- `speech`
-    - `speech/en`
-    - `speech/fr`
+- `/design`
+  - `/artwork`
+    - `/backgrounds`
+      - `/generic`
+    - `/brands`
+      - `/portable`
+      - `/scalable`
+  - `/styling`
+- `/layout`
+  - `/parceled`
+  - `/required`
+  - `/reusable`
+- `/speech`
+    - `/en`
+    - `/fr`
 
 Some specific folders are managed in a particular way, namely:
 
-- `github`: folder (versioned but marked as documention for [language detection](https://github.com/github/linguist#overrides)) which contains various files used for repository management
-- `assets` : folder (versioned but vendored for [language detection](https://github.com/github/linguist#overrides)) where files from third-party projects are stored
-- `vendor` : folder (unversioned) which contains `PHP` dependencies (managed by [Composer](https://github.com/composer/composer))
+- `/.github`: folder (versioned but marked as documention for [language detection](https://github.com/github/linguist#overrides)) which contains various files used for repository management
+- `/.scope`: (unversioned) folder which contains various stashed notes concerning possible future works which are not yet drafted as open issues
+- `/assets` : folder (versioned but vendored for [language detection](https://github.com/github/linguist#overrides)) where files from third-party projects are stored
+- `/vendor`: (unversioned) folder which contains `PHP` dependencies (managed by [Composer](https://github.com/composer/composer))
