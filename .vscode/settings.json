@@ -2,7 +2,12 @@
   "editor.rulers": [
     80
   ],
-  "editor.wordWrap": "bounded",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "[markdown]":{
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+},
   "files.exclude": {
     "**/desktop.ini": true
   },
