@@ -146,6 +146,7 @@
     RewriteRule ^contact$ /proof.php?file=contact [QSA,L]
     RewriteRule ^imprint$ /proof.php?file=imprint [QSA,L]
     RewriteRule ^activities$ /stall.php?file=activities [QSA,L]
+    RewriteRule ^capacities$ /stall.php?file=capacities [QSA,L]
     RewriteRule ^principles$ /stall.php?file=principles [QSA,L]
 </IfModule>
 
