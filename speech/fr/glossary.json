@@ -1,10 +1,13 @@
 {
   "code": {
     "iso-1": {
-      "ch": "Suisse"
+      "ch": "Suisse",
+      "fr": "France",
+      "us": "États-Unis"
     },
     "iso-2": {
-      "ch-vs": "Valais"
+      "ch-vs": "Valais",
+      "us-ca": "Californie"
     }
   },
   "foot": {
@@ -13,6 +16,10 @@
     "part-2": "projets",
     "part-3": "réseaux",
     "part-4": "colophon"
+  },
+  "host": {
+    "server": "hébergeur",
+    "source": "code source"
   },
   "page": {
     "error" : {
@@ -28,11 +35,11 @@
     },
     "stall": {
       "activities": "activités",
+      "capacities": "aptitudes",
       "principles": "principes"
     }
   },
   "site": {
-    "build": "code source",
     "email": "courrier électronique",
     "motto": "conception internet, édition numérique, etc.",
     "owner": "propriétaire et éditeur du site"
