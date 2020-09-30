@@ -1,6 +1,10 @@
 {
   "network": [
     {
+      "name": "CodePen",
+      "link": "https://codepen.io/gizmecano"
+    },
+    {
       "name": "DeviantArt",
       "link": "https://www.deviantart.com/gizmecano"
     },
@@ -13,12 +17,20 @@
       "link": "https://github.com/gizmecano"
     },
     {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/mergey/"
+    },
+    {
       "name": "Medium",
       "link": "https://medium.com/@gizmecano"
     },
     {
       "name": "Twitter",
       "link": "https://twitter.com/gizmecano"
+    },
+    {
+      "name": "Unsplash",
+      "link": "https://unsplash.com/@gizmecano"
     }
   ]
 }

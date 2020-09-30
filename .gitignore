@@ -10,7 +10,9 @@
 *.woff2
 
 # Bypassed files
+*.code-workspace
 masthead.*
+phpinfo.php
 
 # Bypassed folders
 /.scope

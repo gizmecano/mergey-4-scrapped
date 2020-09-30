@@ -10,6 +10,8 @@
 <meta property="og:description" content="<?php echo $meta['blurb']; ?>">
 <meta property="og:site_name" content="<?php echo $site['name']; ?>">
 <meta property="og:image" content="<?php echo $meta['image']; ?>">
+<!-- Facebook properties -->
+<meta property="fb:pages" content="<?php echo $masthead['fb']; ?>">
 <!-- Twitter names -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@gizmecano">

@@ -1,10 +1,13 @@
 {
   "code": {
     "iso-1": {
-      "ch": "Switzerland"
+      "ch": "Switzerland",
+      "fr": "France",
+      "us": "United States of America"
     },
     "iso-2": {
-      "ch-vs": "Wallis"
+      "ch-vs": "Wallis",
+      "us-ca": "California"
     }
   },
   "foot": {
@@ -13,6 +16,10 @@
     "part-2": "projects",
     "part-3": "networks",
     "part-4": "masthead"
+  },
+  "host": {
+    "server": "hosting service",
+    "source": "source code"
   },
   "page": {
     "error" : {
@@ -28,11 +35,11 @@
     },
     "stall": {
       "activities": "activities",
+      "capacities": "skills",
       "principles": "principles"
     }
   },
   "site": {
-    "build": "source code",
     "email": "electronic mail",
     "motto": "web design, digital publishing, etc.",
     "owner": "site owner and publisher"

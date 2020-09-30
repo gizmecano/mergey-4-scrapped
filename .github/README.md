@@ -4,9 +4,9 @@ This repository contains source code of a [handmade portfolio](http:mergey.ch/) 
 
 > For the time being, this website is still currently on recasting and the content of this repository should be considered like any `beta` phase project.
 
-## Project root layouts
+## Root layouts
 
-Currently, the main layouts necessary for the website running  can be presented in the following list:
+The main layouts necessary for the website running can be presented in the following list:
 
 1. `error.php`: composed with plain `Markdown` files for displaying error related page according to response status codes
 2. `index.php`: composed with modular `PHP` inclusions for displaying temporary home page content
@@ -14,22 +14,29 @@ Currently, the main layouts necessary for the website running  can be presented 
 4. `proof.php`: composed with modular `PHP` inclusions for displaying legal or necessary data
 5. `stall.php`: composed with plain `Markdown` files for displaying information related to activities
 
-## Project folders tree
+## Folders tree
 
-With the exception of the `vendor` folder (unversioned) which contains the dependencies (managed by composer) and the `assets` folder (versioned) where files from third-party projects are stored, the general tree structure of the project is presented as follows:
+The general tree structure of the project is presented as follows:
 
-- `design`
-  - `design/artwork`
-    - `design/artwork/backgrounds`
-      - `design/artwork/backgrounds/generic`
-    - `design/artwork/brands`
-      - `design/artwork/brands/portable`
-      - `design/artwork/brands/scalable`
-  - `design/styling`
-- `layout`
-  - `layout/parceled`
-  - `layout/required`
-  - `layout/reusable`
-- `speech`
-    - `speech/en`
-    - `speech/fr`
+- `/design`
+  - `/artwork`
+    - `/backgrounds`
+      - `/generic`
+    - `/brands`
+      - `/portable`
+      - `/scalable`
+  - `/styling`
+- `/layout`
+  - `/parceled`
+  - `/required`
+  - `/reusable`
+- `/speech`
+    - `/en`
+    - `/fr`
+
+Some specific folders are managed in a particular way, namely:
+
+- `/.github`: folder (versioned but marked as documention for [language detection](https://github.com/github/linguist#overrides)) which contains various files used for repository management
+- `/.scope`: (unversioned) folder which contains various stashed notes concerning possible future works which are not yet drafted as open issues
+- `/assets` : folder (versioned but vendored for [language detection](https://github.com/github/linguist#overrides)) where files from third-party projects are stored
+- `/vendor`: (unversioned) folder which contains `PHP` dependencies (managed by [Composer](https://github.com/composer/composer))
