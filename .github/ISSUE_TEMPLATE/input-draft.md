@@ -11,12 +11,14 @@ assignees: gizmecano
 
 <!-- For each new entry in this section, corresponding data have to be inputted in relevant `people` table according to an unique four-digit identifier. -->
 
+- number of items to input:
   - [ ] `xxxx`
 
 # Object
 
 <!-- For each new entry in this section, corresponding data have to be inputted in relevant `object` table. In addition, in each appropriate sub-folder (according to the `type/item` pattern), the three files `{item}.blurb.md` `{item}.brief.md` and `{item}.focus.json` have to be correctly set and available. Optionally, a file `{item}.split.json` may be defined if the object in question is split into several parts. -->
 
+- number of items to input:
   - [ ] `type/item`
 
 # Report
@@ -26,16 +28,20 @@ assignees: gizmecano
 
 ## Major
 
+- number of items to input:
   - [ ] `0000-00-00` `type/item-0.0.0`
 
 ## Minor
 
+- number of items to input:
   - [ ] `0000-00-00` `type/item-0.0.0`
 
 ## Patch
 
+- number of items to input:
   - [ ] `0000-00-00` `type/item-0.0.0`
 
 ## Build
 
+- number of items to input:
   - [ ] `0000-00-00` `type/item-0.0.0`
